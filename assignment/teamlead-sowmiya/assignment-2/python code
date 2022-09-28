@@ -1,1 +1,19 @@
-
+import random
+arr=[]
+num=int(input("Enter the no of inputs: "))
+for i in range(0,num):
+    a=int(input())
+    arr.append(a)
+print(arr)
+temperature=random.choice(arr)
+humidity=random.choice(arr)
+print(temperature,humidity)
+if temperature>100:
+    if humidity>80:
+        print("DANGEROUS")
+    else:
+        print("HIGH TEMPERATURE")
+elif temperature==100:
+    print("Care needed but no risk")
+else:
+    print("All good")
